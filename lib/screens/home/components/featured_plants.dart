@@ -9,15 +9,18 @@ class FeaturedPlants extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        FeaturePlantCard(
-            image: "assets/images/sunshine.jpg",
-            press: () {}),
-        FeaturePlantCard(
-            image: "assets/images/3d.jpg",
-            press: () {}),
-      ],
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children: [
+          FeaturePlantCard(
+              image: "assets/images/sunshine.jpg",
+              press: () {}),
+          FeaturePlantCard(
+              image: "assets/images/3d.jpg",
+              press: () {}),
+        ],
+      ),
     );
   }
 }

@@ -14,15 +14,15 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
+      scrollDirection: Axis.vertical,
       child: Column(
         children: [
-          //HeaderWithSearchBox(size: size,),
-          // TitleWithMoreBtn(title: "Recomended", pressF: () {}),
-          // RecomendsPlants(),
-          // TitleWithMoreBtn(title: "Featured Plants", pressF: () {}),
-          // FeaturedPlants(),
-          // SizedBox(height: kDefaultPadding,),
+          HeaderWithSearchBox(size: size,),
+          TitleWithMoreBtn(title: "Recomended", pressF: () {}),
+          RecomendsPlants(),
+          TitleWithMoreBtn(title: "Featured Plants", pressF: () {}),
+          FeaturedPlants(),
+          SizedBox(height: kDefaultPadding,),
         ],
       ),
     );
